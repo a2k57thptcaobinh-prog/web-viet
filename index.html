@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Viết Tiếng Anh - Đầy Đủ</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        h1, h2, h3 { color: #333; }
+        .level { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; background-color: #fff; display: none; }
+        .level.active { display: block; }
+        .task { margin-bottom: 15px; }
+        .answer { display: none; margin-top: 10px; padding: 10px; background-color: #e9f7e9; border: 1px solid #4CAF50; }
+        button { padding: 5px 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+        textarea { width: 100%; height: 100px; margin-bottom: 10px; }
+        select { padding: 5px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Luyện Viết Tiếng Anh - Đầy Đủ</h1>
+    <p>Chọn cấp độ từ menu dưới đây để bắt đầu luyện tập. Nhập câu trả lời và nhấn "Nộp bài" để xem đáp án.</p>
+    
+    <!-- Menu chọn cấp độ -->
+    <label for="levelSelect">Chọn cấp độ:</label>
+    <select id="levelSelect">
+        <option value="recognition">I. NHẬN BIẾT (Recognition)</option>
+        <option value="understanding">II. THÔNG HIỂU (Understanding)</option>
+        <option value="application">III. VẬN DỤNG (Application)</option>
+    </select>
+
+    <div id="levels">
+        <!-- I. NHẬN BIẾT -->
+        <div class="level active" id="recognition">
+            <h2>I. NHẬN BIẾT (Recognition)</h2>
+            
+            <h3>WRITING</h3>
+            <div class="task">
+                <h4>Task 1: Rewrite the first sentences so that the second one means nearly the same as the first one:</h4>
+                <p>1. “Why don’t you put better lock on the door, Barbara”? said John => John suggested …………………………………………………...</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer1')">Nộp bài</button>
+                <div id="answer1" class="answer">Đáp án: John suggested that Barry should put a better lock on the door.</div>
+            </div>
+            <div class="task">
+                <p>2. Although his both legs were broken in the crash, he managed to get out of the car before it exploded. => Despite his ……………………………………………………....</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer2')">Nộp bài</button>
+                <div id="answer2" class="answer">Đáp án: Despite his both broken legs, he managed to get out of the car before it exploded.</div>
+            </div>
+            <div class="task">
+                <p>3. I haven’t eaten this kind of food before. => This is the first …………………………………………………..</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer3')">Nộp bài</button>
+                <div id="answer3" class="answer">Đáp án: This is the time I have eaten this kind of food.</div>
+            </div>
+            <div class="task">
+                <p>4. The architect has drawn plans for an extension to the house. => Plans …………………………………………………………….</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer4')">Nộp bài</button>
+                <div id="answer4" class="answer">Đáp án: Plans for an extension to the house have been drawn by the architect./ Plans have been drawn for an extension by the architect.</div>
+            </div>
+            <div class="task">
+                <p>5. It isn’t necessary for you to finish by Saturday => You ………………………………………………………………</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer5')">Nộp bài</button>
+                <div id="answer5" class="answer">Đáp án: You don’t have to finish by Saturday.</div>
+            </div>
+            <div class="task">
+                <p>6. “How many survivors are there?”, asked the journalist. => The journalist wanted to know …………………………………..</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer6')">Nộp bài</button>
+                <div id="answer6" class="answer">Đáp án: The journalist wanted to know how many survivors there were./ The number of survivors there were.</div>
+            </div>
+            <div class="task">
+                <p>7. It was such rotten meat that it had to be thrown away. => The meat was ……………………………………………………. </p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer7')">Nộp bài</button>
+                <div id="answer7" class="answer">Đáp án: The meat was so rotten that it had to be thrown away.</div>
+            </div>
+            <div class="task">
+                <p>8. It is essential that Professor Van Helsing is met at the airport. => Professor Van Helsing ……………………………………………</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer8')">Nộp bài</button>
+                <div id="answer8" class="answer">Đáp án: Professor Van Helsing must be met at the airport.</div>
+            </div>
+            
+            <div class="task">
+                <h4>Task 2: Finish the second sentence so that it has a similar meaning to the first one, beginning with the given word(s).</h4>
+                <p>1. He is late, so he cannot go with us on the ecotour to the national park today. (COULD) -> If _____________________________________________</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer9')">Nộp bài</button>
+                <div id="answer9" class="answer">Đáp án: If he weren’t late, he could go with us on the ecotour to the national park today.</div>
+            </div>
+            <div class="task">
+                <p>2. We can see the beautiful boats when we go to the floating market. (GO) -> If _____________________________________________</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer10')">Nộp bài</button>
+                <div id="answer10" class="answer">Đáp án: If we go to the floating market, we can see the beautiful boats.</div>
+            </div>
+            <div class="task">
+                <p>3. There are few tourists so this ecotour is cancelled. (MORE) -> If _____________________________________________</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer11')">Nộp bài</button>
+                <div id="answer11" class="answer">Đáp án: If there were more tourists, this ecotour wouldn’t be cancelled.</div>
+            </div>
+            <div class="task">
+                <p>4. We should hurry up or we will get lost alone in the forest. (WILL) -> If _____________________________________________</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer12')">Nộp bài</button>
+                <div id="answer12" class="answer">Đáp án: If we don’t hurry up, we will get lost alone in the forest.</div>
+            </div>
+            <div class="task">
+                <p>5. The water is rough so we are not allowed to go snorkelling. (WOULD) -> If _____________________________________________</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer13')">Nộp bài</button>
+                <div id="answer13" class="answer">Đáp án: If the water weren’t rough, we would be allowed to go snorkelling.</div>
+            </div>
+            
+            <div class="task">
+                <h4>Task 3: Change the following sentences into active voice</h4>
+                <p>1) These exercises were done well. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer14')">Nộp bài</button>
+                <div id="answer14" class="answer">Đáp án: Someone did these exercises well.</div>
+            </div>
+            <div class="task">
+                <p>2) This dress must be washed in cold water. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer15')">Nộp bài</button>
+                <div id="answer15" class="answer">Đáp án: You must wash this dress in cold water.</div>
+            </div>
+            <div class="task">
+                <p>3) No mistakes have been made in his composition. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer16')">Nộp bài</button>
+                <div id="answer16" class="answer">Đáp án: He has made no mistakes in his composition.</div>
+            </div>
+            <div class="task">
+                <p>4) His painting will be exhibited for the first time by New Arts gallery. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer17')">Nộp bài</button>
+                <div id="answer17" class="answer">Đáp án: New Arts Gallery will exhibit his painting for the first time.</div>
+            </div>
+            <div class="task">
+                <p>5) This house was built 100 years ago. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer18')">Nộp bài</button>
+                <div id="answer18" class="answer">Đáp án: They built this house 100 years ago.</div>
+            </div>
+            <div class="task">
+                <p>6) These artificial flowers are made of silk. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer19')">Nộp bài</button>
+                <div id="answer19" class="answer">Đáp án: They make these artificial flowers of silk.</div>
+            </div>
+            <div class="task">
+                <p>7) The lessons are being written by the students now. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer20')">Nộp bài</button>
+                <div id="answer20" class="answer">Đáp án: The students are writing the lessons now.</div>
+            </div>
+            <div class="task">
+                <p>8) This job has to be done at once. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer21')">Nộp bài</button>
+                <div id="answer21" class="answer">Đáp án: Someone has to do this job at once.</div>
+            </div>
+            <div class="task">
+                <p>9) These animals at the zoo are fed twice a day. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer22')">Nộp bài</button>
+                <div id="answer22" class="answer">Đáp án: The zookeepers feed these animals twice a day.</div>
+            </div>
+            <div class="task">
+                <p>10) The operation is going to be performed by French doctors. ________________________________________.</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer23')">Nộp bài</button>
+                <div id="answer23" class="answer">Đáp án: French doctors are going to perform the operation.</div>
+            </div>
+            
+            <div class="task">
+                <h4>Task 4: Mark the letter A, B, C or D to indicate the correct option that best fits each of the numbered blanks</h4>
+                <p>1. It was the third time in six months that the bank had been held _____ . A. over B. down C. up D. out</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer24')">Nộp bài</button>
+                <div id="answer24" class="answer">Đáp án: C</div>
+            </div>
+            <div class="task">
+                <p>2. I always run _____ of money before the end of the month. A. out B. back C. up D. down</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer25')">Nộp bài</button>
+                <div id="answer25" class="answer">Đáp án: A</div>
+            </div>
+            <div class="task">
+                <p>3. It's taking me longer to get _____ the operation than I thought. A. through B. by C. up from D. over</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer26')">Nộp bài</button>
+                <div id="answer26" class="answer">Đáp án: D</div>
+            </div>
+            <div class="task">
+                <p>4. I've just spent two weeks looking _____an aunt of mine who's been ill. A. at B. for C. out for D. after</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer27')">Nộp bài</button>
+                <div id="answer27" class="answer">Đáp án: D</div>
+            </div>
+            <div class="task">
+                <p>5. I've always got _____ well with old people. A. off B. on C. in D. through</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer28')">Nộp bài</button>
+                <div id="answer28" class="answer">Đáp án: B</div>
+            </div>
+            <div class="task">
+                <p>6. It's very cold in here. Do you mind if I turn _________ the heating? A. down B. away C. off D. on</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer29')">Nộp bài</button>
+                <div id="answer29" class="answer">Đáp án: D</div>
+            </div>
+            <div class="task">
+                <p>7. They've _____ a new tower where that old building used to be. A. put up B. put down C. pushed up D. pushed down</p>
+                <textarea placeholder="Nhập câu trả lời của bạn"></textarea>
+                <button onclick="submitAnswer('answer30')">Nộp bài</button>
+                <div id="answer30" class="answer">Đáp án: A</div>
+            </div>
+            <div class="task">
+                <p>8. Stephen always wanted to be an actor when he ________ up. A. came B. grew C. brought D. settled</p>
+                <textarea placeholder="Nhập câu trả lời của
